@@ -69,6 +69,9 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ReminderCellTableViewCell
         
         cell.reminderTitile.text = reminderViewModel.reminderModelObj.reminderTitle?[indexPath.row]
+            
+
+        
         cell.time.text = reminderViewModel.reminderModelObj.reminderDateTime?[indexPath.row]
         let id = reminderViewModel.reminderModelObj.reminderID?[indexPath.row]
         UNUserNotificationCenter.current().getPendingNotificationRequests { (notificationRequests) in

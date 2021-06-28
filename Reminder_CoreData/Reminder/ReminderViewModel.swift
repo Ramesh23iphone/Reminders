@@ -11,6 +11,7 @@ import UserNotifications
 class ReminderViewModel {
     var reminderModelObj = ReminderModel()
     
+    
     // MARK: - FETCH DATA
     func fetchData(){
         reminderModelObj.reminderTitle = []
